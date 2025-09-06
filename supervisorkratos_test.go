@@ -78,6 +78,8 @@ user            = deploy
 directory       = /opt/api-server
 command         = /opt/api-server/bin/api-server
 
+startretries    = 3
+
 stdout_logfile  = /var/log/services/api-server.log
 
 stderr_logfile  = /var/log/services/api-server.err
@@ -288,6 +290,7 @@ stderr_logfile_maxbytes = 10MB
 stderr_logfile_backups = 3
 redirect_stderr = true
 
+stopasgroup     = false
 `
 
 	require.Equal(t, expected, content)
@@ -318,6 +321,7 @@ stdout_logfile  = /var/log/exit/exit-service.log
 
 stderr_logfile  = /var/log/exit/exit-service.err
 
+killasgroup     = false
 stopsignal      = QUIT
 exitcodes       = 0,1,2,130
 `

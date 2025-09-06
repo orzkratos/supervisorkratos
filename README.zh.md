@@ -4,9 +4,11 @@
 
 ---
 
-## ENGLISH README
+<!-- TEMPLATE (ZH) BEGIN: LANGUAGE NAVIGATION -->
+## 英文文档
 
-[English Documentation](README.md)
+[ENGLISH README](README.md)
+<!-- TEMPLATE (ZH) END: LANGUAGE NAVIGATION -->
 
 ## 核心特性
 
@@ -103,6 +105,7 @@ program := supervisorkratos.NewProgramConfig(
 ### 进程控制
 - `WithAutoStart(bool)` - supervisor 启动时自动启动
 - `WithAutoRestart(bool)` - 失败时自动重启  
+- `WithAutoRestartMode(string)` - 自动重启模式 ("false"/"true"/"unexpected")
 - `WithStartRetries(int)` - 最大启动重试次数
 - `WithStartSecs(int)` - 启动成功前等待秒数
 
@@ -141,6 +144,7 @@ sudo supervisorctl status
 ```
 
 <!-- TEMPLATE (ZH) BEGIN: STANDARD PROJECT FOOTER -->
+<!-- VERSION 2025-09-06 04:53:24.895249 +0000 UTC -->
 
 ## 📄 许可证类型
 

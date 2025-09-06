@@ -4,9 +4,11 @@ Go package for generating supervisor configuration files with Kratos microservic
 
 ---
 
+<!-- TEMPLATE (EN) BEGIN: LANGUAGE NAVIGATION -->
 ## CHINESE README
 
 [中文说明](README.zh.md)
+<!-- TEMPLATE (EN) END: LANGUAGE NAVIGATION -->
 
 ## Key Features
 
@@ -103,6 +105,7 @@ program := supervisorkratos.NewProgramConfig(
 ### Process Control
 - `WithAutoStart(bool)` - Auto start on supervisor startup
 - `WithAutoRestart(bool)` - Auto restart on failure  
+- `WithAutoRestartMode(string)` - Auto restart mode ("false"/"true"/"unexpected")
 - `WithStartRetries(int)` - Max start retry times
 - `WithStartSecs(int)` - Seconds to wait before considering start successful
 
@@ -141,6 +144,7 @@ sudo supervisorctl status
 ```
 
 <!-- TEMPLATE (EN) BEGIN: STANDARD PROJECT FOOTER -->
+<!-- VERSION 2025-09-06 04:53:24.895249 +0000 UTC -->
 
 ## 📄 License
 
@@ -155,12 +159,12 @@ Contributions are welcome! Report bugs, suggest features, and contribute code:
 - 🐛 **Found a bug?** Open an issue on GitHub with reproduction steps
 - 💡 **Have a feature idea?** Create an issue to discuss the suggestion
 - 📖 **Documentation confusing?** Report it so we can improve
-- 🚀 **Need new features?** Share your use cases to help us understand requirements
-- ⚡ **Performance issue?** Help us optimize by reporting slow operations
+- 🚀 **Need new features?** Share the use cases to help us understand requirements
+- ⚡ **Performance issue?** Help us optimize via reporting slow operations
 - 🔧 **Configuration problem?** Ask questions about complex setups
-- 📢 **Follow project progress?** Watch the repo for new releases and features
-- 🌟 **Success stories?** Share how this package improved your workflow
-- 💬 **General feedback?** All suggestions and comments are welcome
+- 📢 **Follow project progress?** Watch the repo to get new releases and features
+- 🌟 **Success stories?** Share how this package improved the workflow
+- 💬 **Common feedback?** Each suggestion and comment is welcome
 
 ---
 
@@ -168,13 +172,13 @@ Contributions are welcome! Report bugs, suggest features, and contribute code:
 
 New code contributions, follow this process:
 
-1. **Fork**: Fork the repo on GitHub (using the webpage interface).
+1. **Fork**: Fork the repo on GitHub (using the webpage UI).
 2. **Clone**: Clone the forked project (`git clone https://github.com/yourname/repo-name.git`).
 3. **Navigate**: Navigate to the cloned project (`cd repo-name`)
 4. **Branch**: Create a feature branch (`git checkout -b feature/xxx`).
-5. **Code**: Implement your changes with comprehensive tests
+5. **Code**: Implement the changes with comprehensive tests
 6. **Testing**: (Golang project) Ensure tests pass (`go test ./...`) and follow Go code style conventions
-7. **Documentation**: Update documentation for user-facing changes and use meaningful commit messages
+7. **Documentation**: Update documentation to support client-facing changes and use significant commit messages
 8. **Stage**: Stage changes (`git add .`)
 9. **Commit**: Commit changes (`git commit -m "Add feature xxx"`) ensuring backward compatible code
 10. **Push**: Push to the branch (`git push origin feature/xxx`).
@@ -186,7 +190,7 @@ Please ensure tests pass and include relevant documentation updates.
 
 ## 🌟 Support
 
-Welcome to contribute to this project by submitting pull requests and reporting issues.
+Welcome to contribute to this project via submitting merge requests and reporting issues.
 
 **Project Support:**
 
